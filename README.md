@@ -15,91 +15,91 @@ Start the development server: In the terminal, run npm start to start the React 
 Open your browser and visit http://localhost:3000 to see the calculator.
 # PROGRAM:
 # APP.JS
-java
-import React, { useState } from 'react';
-import './App.css';
+java<br>
+import React, { useState } from 'react';<br>
+import './App.css';<br>
 
-function App() {
-  const [result, setResult] = useState('');
+function App() {<br>
+  const [result, setResult] = useState('');<br>
 
-  const handleClick = (value) => {
-    setResult(result + value);
-  };
+  const handleClick = (value) => {<br>
+    setResult(result + value);<br>
+  };<br>
 
-  const calculate = () => {
-    try {
-      setResult(eval(result).toString());
-    } catch (error) {
-      setResult('Error');
-    }
-  };
+  const calculate = () => {<br>
+    try {<br>
+      setResult(eval(result).toString());<br>
+    } catch (error) {<br>
+      setResult('Error');<br>
+    }<br>
+  };<br>
 
-  const clear = () => {
-    setResult('');
-  };
+  const clear = () => {<br>
+    setResult('');<br>
+  };<br>
 
-  return (
-    <div className="App">
+  return (<br>
+    <div className="App"><br>
       <br></br>
       <br></br>
-      <h2><u>SIMPLE CALCULATOR</u></h2>
-      <br></br>
-      <div className="calculator">
-        <input type="text" value={result} readOnly />
-        <div className="keypad">
-          <button onClick={() => handleClick('9')}>9</button>
-          <button onClick={() => handleClick('8')}>8</button>
-          <button onClick={() => handleClick('7')}>7</button>
-          <button onClick={() => handleClick('6')}>6</button>
-          <button onClick={() => handleClick('5')}>5</button>
-          <button onClick={() => handleClick('4')}>4</button>
-          <button onClick={() => handleClick('3')}>3</button>
-          <button onClick={() => handleClick('2')}>2</button>
-          <button onClick={() => handleClick('1')}>1</button>
-          <button onClick={() => handleClick('+')}>+</button>
-          <button onClick={() => handleClick('0')}>0</button>
-          <button onClick={() => handleClick('-')}>-</button>
-          <button onClick={() => handleClick('*')}>*</button>
-          <button onClick={clear}>C</button>
-          <button onClick={() => handleClick('/')}>/</button>
-          <button onClick={() => handleClick('.')}>.</button>
-          <button onClick={calculate}>=</button>
-  </div>
-      </div>
-    </div>
-  );
-}
+      <h2><u>SIMPLE CALCULATOR</u></h2><br>
+      <br></br><br>
+      <div className="calculator"><br>
+        <input type="text" value={result} readOnly /><br>
+        <div className="keypad"><br>
+          <button onClick={() => handleClick('9')}>9</button><br>
+          <button onClick={() => handleClick('8')}>8</button><br>
+          <button onClick={() => handleClick('7')}>7</button><br>
+          <button onClick={() => handleClick('6')}>6</button><br>
+          <button onClick={() => handleClick('5')}>5</button><br>
+          <button onClick={() => handleClick('4')}>4</button><br>
+          <button onClick={() => handleClick('3')}>3</button><br>
+          <button onClick={() => handleClick('2')}>2</button><br>
+          <button onClick={() => handleClick('1')}>1</button><br>
+          <button onClick={() => handleClick('+')}>+</button><br>
+          <button onClick={() => handleClick('0')}>0</button><br>
+          <button onClick={() => handleClick('-')}>-</button><br>
+          <button onClick={() => handleClick('*')}>*</button><br>
+          <button onClick={clear}>C</button><br>
+          <button onClick={() => handleClick('/')}>/</button><br>
+          <button onClick={() => handleClick('.')}>.</button><br>
+          <button onClick={calculate}>=</button><br>
+  </div><br>
+      </div><br>
+    </div><br>
+  );<br>
+}<br>
 
-export default App;
+export default App;<br>
 # APP.CSS:
-java
-.App {
-  text-align: center;
-}
+java<br>
+.App {<br>
+  text-align: center;<br>
+}<br>
 
-.calculator {
-  width: 200px;
-  margin: 0 auto;
-  padding: 35px;
-  border: 2px solid #f77e7e;
-  border-radius: 5px;
+.calculator {<br>
+  width: 200px;<br>
+  margin: 0 auto;<br>
+  padding: 35px;<br>
+  border: 2px solid #f77e7e;<br>
+  border-radius: 5px;<br>
   
-}
+}<br>
 
-input[type='text'] {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 5px;
-  font-size: 16px;
-}
+input[type='text'] {<br>
+  width: 100%;<br>
+  margin-bottom: 20px;<br>
+  padding: 5px;<br>
+  font-size: 16px;<br>
+}<br>
 
-.keypad button {
-  width: 50px;
-  height: 30px;
-  margin: 2px;
-  font-size: 16px;
-  cursor: pointer;
-}
+.keypad button {<br>
+  width: 50px;<br>
+  height: 30px;<br>
+  margin: 2px;<br>
+  font-size: 16px;<br>
+  cursor: pointer;<br>
+}<br>
 # OUTPUT:
 # IDLE:
 ![image](https://github.com/Anuayshh/java-exp/assets/127651217/dd71aa79-7309-4da8-bfe1-0a13a3d1c8db)
