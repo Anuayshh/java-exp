@@ -14,7 +14,7 @@ Replace the contents of "src/App.css" with the following CSS styles
 Start the development server: In the terminal, run npm start to start the React development server.
 Open your browser and visit http://localhost:3000 to see the calculator.
 # PROGRAM:
-APP.JS
+# APP.JS
 java
 import React, { useState } from 'react';
 import './App.css';
@@ -64,14 +64,14 @@ function App() {
           <button onClick={() => handleClick('/')}>/</button>
           <button onClick={() => handleClick('.')}>.</button>
           <button onClick={calculate}>=</button>
-        </div>
+  </div>
       </div>
     </div>
   );
 }
 
 export default App;
-APP.CSS:
+# APP.CSS:
 java
 .App {
   text-align: center;
@@ -101,10 +101,10 @@ input[type='text'] {
   cursor: pointer;
 }
 # OUTPUT:
-IDLE:
+# IDLE:
 ![image](https://github.com/Anuayshh/java-exp/assets/127651217/dd71aa79-7309-4da8-bfe1-0a13a3d1c8db)
 
-CALCULATION:
+# CALCULATION:
 ![image](https://github.com/Anuayshh/java-exp/assets/127651217/413b5ea9-6256-4439-8cdc-ad9f0e56136f)
 ![image](https://github.com/Anuayshh/java-exp/assets/127651217/5923b0d1-493b-432a-b14d-1ebcc5be8ff7)
 
